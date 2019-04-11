@@ -1,0 +1,139 @@
+@import "base";
+@import "typography";
+
+nav {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+}
+
+.logo-nav {
+    width: 34rem;
+}
+
+.navigation {
+    margin-top: 8rem;
+    list-style-type: none;
+    font-weight:400;
+
+    & li {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 2rem 8rem;
+        padding-bottom:0rem;
+
+        cursor:pointer;
+ &:hover{border-bottom: 2px solid #5F808D;
+    padding-bottom:0.3rem;
+    transition-duration: 0.2s;
+}
+
+    }
+}
+main{
+    padding: 0 8rem;
+position:relative;
+margin-bottom:10rem;
+}
+.article{
+    display:grid;
+    z-index: 0;
+    grid-template-columns: 1fr 1fr;
+    margin-top:20rem;
+&-heading{
+    background-color: #EDF7FE;
+    font-size:4rem;
+    font-weight:300;
+    display:inline-block;
+    padding:2rem 1rem;
+   position:absolute;
+  top:-8rem;
+  left:8rem;
+    z-index:10;
+}
+& img{width:100%;
+}
+& p {
+    margin-top:2rem;
+    padding: 4rem 8rem;
+font-size:1.8rem;}
+}
+
+footer{
+    background-color: #EDF7FE;
+    & p{text-align: center;
+    padding: 1rem;}
+
+    
+}
+.footer-logo{
+    width: 20rem;
+    display:block;
+    margin: 0 auto;
+}
+.footer-block{
+    display:grid; 
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: end;
+}
+.footer-links{
+    list-style-type: none;
+    cursor:pointer;
+    & li{
+        &:hover{font-weight:700;
+        }
+    }
+    
+
+}
+.footer-link-bold{
+    font-weight:700;
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+}
+.social{
+    text-align: center;
+    margin:0 auto;
+    & img{
+        margin-top:3rem;
+        padding: 2rem;
+        width:7rem;
+        &:hover{transform: scale(1.1);
+        transition-duration: 0.2s;}
+    }
+}
+
+// STYLE TILE STYLINGS
+.style-tile{
+    position:relative;
+    margin-top: 3rem;
+    & p{width: 50%;
+    font-size:1.6rem;
+padding-bottom: 2rem;}
+    & .article-heading{
+        position:relative;
+        top: 0;
+        left:0;
+    }
+
+}
+.colors {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    &-blue{background-color: #5F808D; 
+    margin: 0 5rem;}
+    &-pastel-pink{
+        background-color: #FEFBF8; 
+        margin: 0 5rem;
+        height:100%;
+        width:50%;
+    }
+    &-pastel-blue{
+        background-color: #EDF7FE;
+        margin: 0 5rem;
+        height:100%;
+        width:50%;
+        float:left;
+    }
+    &-description{height:20rem;
+    font-size: 1.6rem;} 
+}
